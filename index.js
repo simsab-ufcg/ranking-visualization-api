@@ -6,7 +6,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const database_config = require('./db/database.config');
 const estado_controller = require('./controllers/estado.controller');
-const cidade_controller = require('./controllers/cidade.controller');
+//const cidade_controller = require('./controllers/cidade.controller');
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/estados', estado_controller);
 
-app.use('/cidade', cidade_controller);
+//app.use('/cidade', cidade_controller);
 
 app.get('/', (req, res) => {
     res.send('it works');
