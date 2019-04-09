@@ -3,6 +3,7 @@ const estado = require('../models/estado.model');
 
 const router = express.Router();
 
+// busca e lista todos os estados
 router.get('/', (req, res) => {
     estado.findAll((err, estados)=> {
       if (err) {
