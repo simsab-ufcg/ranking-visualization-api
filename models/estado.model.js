@@ -7,6 +7,30 @@ const estado_schema = mongoose.Schema({
         required: true,
         unique: true
     },
+    imd_d: {
+        type: Number,
+        required: true
+    },
+    imd_f: {
+        type: Number,
+        required: true
+    },
+    imd_i: {
+        type: Number,
+        required: true
+    },
+    imd_p: {
+        type: Number,
+        required: true
+    },
+    imd_r: {
+        type: Number,
+        required: true
+    },
+    imd_e: {
+        type: Number,
+        required: true
+    },
     uf: {
         type: String,
         required: true,
